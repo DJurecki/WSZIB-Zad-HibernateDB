@@ -35,7 +35,7 @@ public class GUI {
             int choice = menu();
             switch (choice){
                 case 1:
-                    System.out.println("Enter car id: ");
+                    System.out.println("Enter game id: ");
                     Game game = gameRepository.getGameById(scanner.nextInt());
                     System.out.println(game);
                     break;
@@ -43,11 +43,11 @@ public class GUI {
                     gameRepository.persistGame(createGame());
                     break;
                 case 3:
-                    System.out.println("Enter car id: ");
+                    System.out.println("Enter game id: ");
                     gameRepository.updateCar(scanner.nextInt());
                     break;
                 case 4:
-                    System.out.println("Enter car id: ");
+                    System.out.println("Enter game id: ");
                     gameRepository.deleteCar(scanner.nextInt());
                     break;
                 case 5:
