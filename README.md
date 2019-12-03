@@ -1,1 +1,1 @@
-# WSZIB-Zad-HibernateDB
+# Nazwa DB: games, Nazwa Tabeli: game
