@@ -4,6 +4,7 @@
     <list default="true" id="ec9daf96-022f-41a8-8322-e320689ed9ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jurecki/db/GameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jurecki/db/GameRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jurecki/gui/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jurecki/gui/GUI.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +84,9 @@
       <workItem from="1574769961157" duration="106000" />
       <workItem from="1574770201484" duration="125000" />
       <workItem from="1574770690626" duration="504000" />
+      <workItem from="1574939907166" duration="921000" />
+      <workItem from="1575019764495" duration="30000" />
+      <workItem from="1575301136626" duration="5875000" />
     </task>
     <servers />
   </component>

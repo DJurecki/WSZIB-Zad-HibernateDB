@@ -14,28 +14,28 @@ public class GameRepository {
 
     private static SessionFactory factory = new Configuration().configure().buildSessionFactory();
 
-    public void persistGame(Game game){
+    public void persistGame(Game game) {
         Session session = factory.openSession();
         Transaction tx = null;
-        try{
+        try {
             tx = session.beginTransaction();
             session.save(game);
             tx.commit();
-        } catch (HibernateException e){
-            if(tx != null) tx.rollback();
-        } finally{
+        } catch (HibernateException e) {
+            if (tx != null) tx.rollback();
+        } finally {
             session.close();
         }
     }
 
-    public Game getGameById(int id){
+    public Game getGameById(int id) {
         Session session = factory.openSession();
         Game games = (Game) session.createQuery("FROM com.jurecki.model.Game WHERE id = " + id).uniqueResult();
         session.close();
         return games;
     }
 
-    public void updateCar(int id) {
+    public void updateGame(int id) {
         Game game = getGameById(id);
         Scanner scanner = new Scanner(System.in);
 
@@ -46,18 +46,18 @@ public class GameRepository {
 
         Session session = factory.openSession();
         Transaction tx = null;
-        try{
+        try {
             tx = session.beginTransaction();
             session.update(game);
             tx.commit();
-        } catch (HibernateException e){
-            if(tx != null) tx.rollback();
+        } catch (HibernateException e) {
+            if (tx != null) tx.rollback();
         } finally {
             session.close();
         }
     }
 
-    public void deleteCar(int id) {
+    public void deleteGame(int id) {
         Game game = getGameById(id);
         Session session = factory.openSession();
         Transaction tx = null;
